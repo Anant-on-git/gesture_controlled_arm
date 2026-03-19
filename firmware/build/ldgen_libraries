@@ -196,4 +196,11 @@
 /home/anant/gesture_controlled_arm/firmware/build/esp-idf/perfmon/libperfmon.a
 /home/anant/gesture_controlled_arm/firmware/build/esp-idf/rt/librt.a
 /home/anant/gesture_controlled_arm/firmware/build/esp-idf/spiffs/libspiffs.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/common/libcommon.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/mpu6050/libmpu6050.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/common/libcommon.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/driver/libdriver.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/serial_comm/libserial_comm.a
 /home/anant/gesture_controlled_arm/firmware/build/esp-idf/main/libmain.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/mpu6050/libmpu6050.a
+/home/anant/gesture_controlled_arm/firmware/build/esp-idf/serial_comm/libserial_comm.a

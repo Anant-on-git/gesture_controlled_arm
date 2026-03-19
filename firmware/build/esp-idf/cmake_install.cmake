@@ -699,6 +699,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/anant/gesture_controlled_arm/firmware/build/esp-idf/common/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anant/gesture_controlled_arm/firmware/build/esp-idf/mpu6050/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anant/gesture_controlled_arm/firmware/build/esp-idf/serial_comm/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/anant/gesture_controlled_arm/firmware/build/esp-idf/main/cmake_install.cmake")
 endif()
 
