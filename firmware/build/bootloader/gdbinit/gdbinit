@@ -1,0 +1,2 @@
+source /home/anant/gesture_controlled_arm/firmware/build/bootloader/gdbinit/symbols
+source /home/anant/gesture_controlled_arm/firmware/build/bootloader/gdbinit/connect
