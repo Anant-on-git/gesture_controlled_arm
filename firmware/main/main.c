@@ -1,6 +1,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
+#include "esp_log.h"
 #include "mpu6050.h"
 #include "serial_comm.h"
 
@@ -13,6 +14,8 @@
 #define SERIAL_RX_GPIO 44
 #define SERIAL_BAUD_RATE 115200
 #define STREAM_PERIOD_MS 100
+
+static const char *TAG = "main";
 
 void app_main(void)
 {
@@ -31,8 +34,12 @@ void app_main(void)
 
     imu_data_t imu_data = {0};
 
-    (void)mpu6050_init(&mpu_config);
-    (void)serial_comm_init(&serial_config);
+    ESP_ERROR_CHECK(serial_comm_init(&serial_config));
+
+    const esp_err_t mpu_err = mpu6050_init(&mpu_config);
+    if (mpu_err != ESP_OK) {
+        ESP_LOGE(TAG, "MPU6050 init failed: %s", esp_err_to_name(mpu_err));
+    }
 
     while (1) {
         if (mpu6050_read(&imu_data) == ESP_OK) {

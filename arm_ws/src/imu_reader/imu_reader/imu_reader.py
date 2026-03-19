@@ -13,7 +13,7 @@ class ImuReaderNode(Node):
     def __init__(self) -> None:
         super().__init__("imu_reader")
 
-        self.declare_parameter("port", "/dev/ttyUSB0")
+        self.declare_parameter("port", "/dev/ttyACM0")
         self.declare_parameter("baud_rate", 115200)
         self.declare_parameter("frame_id", "imu_link")
         self.declare_parameter("poll_period", 0.01)
