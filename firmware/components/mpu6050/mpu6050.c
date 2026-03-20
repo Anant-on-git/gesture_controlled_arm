@@ -1,5 +1,6 @@
 #include "mpu6050.h"
 
+#include <inttypes.h>
 #include <math.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -73,8 +74,18 @@ esp_err_t mpu6050_init(const mpu6050_config_t *config)
     }
 
     if (s_mpu6050_initialized) {
+        ESP_LOGI(TAG, "MPU6050 already initialized");
         return ESP_OK;
     }
+
+    ESP_LOGI(
+        TAG,
+        "Starting MPU6050 init on I2C port %d, SDA=%d, SCL=%d, clk=%" PRIu32,
+        MPU6050_I2C_PORT,
+        config->sda_gpio,
+        config->scl_gpio,
+        config->i2c_clock_hz
+    );
 
     const i2c_master_bus_config_t bus_config = {
         .i2c_port = MPU6050_I2C_PORT,
@@ -88,8 +99,10 @@ esp_err_t mpu6050_init(const mpu6050_config_t *config)
 
     esp_err_t err = i2c_new_master_bus(&bus_config, &s_i2c_bus);
     if (err != ESP_OK) {
+        ESP_LOGE(TAG, "i2c_new_master_bus failed: %s", esp_err_to_name(err));
         return err;
     }
+    ESP_LOGI(TAG, "I2C master bus created");
 
     const i2c_device_config_t device_config = {
         .dev_addr_length = I2C_ADDR_BIT_LEN_7,
@@ -100,10 +113,12 @@ esp_err_t mpu6050_init(const mpu6050_config_t *config)
 
     err = i2c_master_bus_add_device(s_i2c_bus, &device_config, &s_mpu6050_dev);
     if (err != ESP_OK) {
+        ESP_LOGE(TAG, "i2c_master_bus_add_device failed: %s", esp_err_to_name(err));
         (void)i2c_del_master_bus(s_i2c_bus);
         s_i2c_bus = NULL;
         return err;
     }
+    ESP_LOGI(TAG, "MPU6050 device added at address 0x%02X", MPU6050_I2C_ADDRESS);
 
     err = i2c_master_probe(s_i2c_bus, MPU6050_I2C_ADDRESS, MPU6050_I2C_TIMEOUT_MS);
     if (err != ESP_OK) {
@@ -114,6 +129,7 @@ esp_err_t mpu6050_init(const mpu6050_config_t *config)
         s_i2c_bus = NULL;
         return err;
     }
+    ESP_LOGI(TAG, "MPU6050 probe succeeded");
 
     uint8_t who_am_i = 0;
     err = mpu6050_register_read(MPU6050_REG_WHO_AM_I, &who_am_i, 1);
@@ -125,6 +141,7 @@ esp_err_t mpu6050_init(const mpu6050_config_t *config)
         s_i2c_bus = NULL;
         return err;
     }
+    ESP_LOGI(TAG, "WHO_AM_I read returned 0x%02X", who_am_i);
 
     if (who_am_i != MPU6050_WHO_AM_I_VALUE) {
         ESP_LOGE(TAG, "Unexpected WHO_AM_I value: 0x%02X", who_am_i);
@@ -144,6 +161,7 @@ esp_err_t mpu6050_init(const mpu6050_config_t *config)
         s_i2c_bus = NULL;
         return err;
     }
+    ESP_LOGI(TAG, "Wake command sent to MPU6050");
 
     vTaskDelay(pdMS_TO_TICKS(100));
     s_mpu6050_initialized = true;

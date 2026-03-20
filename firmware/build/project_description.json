@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "firmware",
-    "project_version":    "116ac0b-dirty",
+    "project_version":    "c54a7f3-dirty",
     "project_path":       "/home/anant/gesture_controlled_arm/firmware",
     "idf_path":           "/home/anant/esp/esp-idf",
     "build_dir":          "/home/anant/gesture_controlled_arm/firmware/build",
@@ -1911,7 +1911,7 @@
             "type": "LIBRARY",
             "lib": "__idf_serial_comm",
             "reqs": [ "common" ],
-            "priv_reqs": [ "esp_driver_uart" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/anant/gesture_controlled_arm/firmware/build/esp-idf/serial_comm/libserial_comm.a",
@@ -3872,7 +3872,7 @@
             "source": "project_components",
             "lib": "__idf_serial_comm",
             "reqs": [ "common" ],
-            "priv_reqs": [ "esp_driver_uart" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]

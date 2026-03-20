@@ -1,0 +1,180 @@
+Command: /home/anant/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/anant/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/anant/gesture_controlled_arm/firmware/build/firmware.elf /home/anant/gesture_controlled_arm/firmware/build/bootloader/bootloader.elf -m '/home/anant/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/anant/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+: paddr=0003e7ec vaddr=50000000 size=00024h (    36) load
+[0;32mI (140) bo�ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1558
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f84
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.1-dev-2028-g94c20b3ba7 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 20 2026 02:21:39[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0aa78h ( 43640) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001aaa0 vaddr=3fc90400 size=03074h ( 12404) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001db1c vaddr=40374000 size=024fch (  9468) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=148f8h ( 84216) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00034920 vaddr=403764fc size=09ec4h ( 40644) load[0m
+[0;32mI (135) esp_image: segment 5: paddr=0003e7ec vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (140) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (141) boot: Disabling RNG early entropy source...[0m
+[0;32mI (153) cpu_start: Multicore app[0m
+[0;32mI (161) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (162) cpu_start: Pro cpu start user code[0m
+[0;32mI (162) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (163) app_init: Application information:[0m
+[0;32mI (167) app_init: Project name:     firmware[0m
+[0;32mI (171) app_init: App version:      c54a7f3-dirty[0m
+[0;32mI (175) app_init: Compile time:     Mar 20 2026 03:23:33[0m
+[0;32mI (181) app_init: ELF file SHA256:  d01b147c6...[0m
+[0;32mI (185) app_init: ESP-IDF:          v6.1-dev-2028-g94c20b3ba7[0m
+[0;32mI (190) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (194) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (198) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (202) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (208) heap_init: At 3FC93E40 len 000558D0 (342 KiB): RAM[0m
+[0;32mI (213) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (219) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (224) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (230) spi_flash: detected chip: boya[0m
+[0;32mI (233) spi_flash: flash io: dio[0m
+[0;33mW (235) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (248) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (254) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (281) main_task: Calling app_main()[0m
+BOOT: app_main entered
+[0;32mI (281) main: Firmware startup[0m
+BOOT: initializing serial
+BOOT: serial init complete
+BOOT: initializing mpu6050
+[0;32mI (281) mpu6050: Starting MPU6050 init on I2C port 0, SDA=8, SCL=9, clk=400000[0m
+[0;32mI (291) mpu6050: I2C master bus created[0m
+[0;32mI (301) mpu6050: MPU6050 device added at address 0x68[0m
+[0;32mI (301) mpu6050: MPU6050 probe succeeded[0m
+[0;32mI (301) mpu6050: WHO_AM_I read returned 0x68[0m
+[0;32mI (311) mpu6050: Wake command sent to MPU6050[0m
+[0;32mI (411) mpu6050: MPU6050 initialized on SDA=8 SCL=9[0m
+BOOT: mpu6050 init complete
+LOOP: sample -2.191 -0.448 -1.137 -0.026 0.000 -0.058
+{"accel_x":-2.191,"accel_y":-0.448,"accel_z":-1.137,"gyro_x":-0.026,"gyro_y":0.000,"gyro_z":-0.058}
+{"accel_x":-2.201,"accel_y":-0.675,"accel_z":-1.187,"gyro_x":0.022,"gyro_y":0.035,"gyro_z":0.004}
+{"accel_x":-2.140,"accel_y":-0.496,"accel_z":-1.235,"gyro_x":0.073,"gyro_y":0.004,"gyro_z":-0.004}
+{"accel_x":-2.221,"accel_y":-0.660,"accel_z":-1.337,"gyro_x":0.030,"gyro_y":-0.029,"gyro_z":-0.058}
+{"accel_x":-2.210,"accel_y":-0.541,"accel_z":-1.167,"gyro_x":-0.079,"gyro_y":-0.036,"gyro_z":-0.009}
+{"accel_x":-2.120,"accel_y":-0.560,"accel_z":-1.144,"gyro_x":-0.022,"gyro_y":-0.026,"gyro_z":0.009}
+{"accel_x":-2.141,"accel_y":-0.506,"accel_z":-1.164,"gyro_x":0.009,"gyro_y":-0.023,"gyro_z":-0.035}
+{"accel_x":-2.216,"accel_y":-0.618,"accel_z":-1.187,"gyro_x":-0.012,"gyro_y":-0.003,"gyro_z":-0.034}
+{"accel_x":-2.192,"accel_y":-0.635,"accel_z":-1.153,"gyro_x":-0.002,"gyro_y":-0.026,"gyro_z":-0.012}
+{"accel_x":-2.244,"accel_y":-0.713,"accel_z":-1.170,"gyro_x":-0.125,"gyro_y":0.001,"gyro_z":-0.139}
+{"accel_x":-2.137,"accel_y":-0.898,"accel_z":-1.217,"gyro_x":-0.359,"gyro_y":-0.025,"gyro_z":-0.481}
+{"accel_x":-2.085,"accel_y":-0.753,"accel_z":-1.295,"gyro_x":-0.126,"gyro_y":0.021,"gyro_z":-0.204}
+{"accel_x":-2.397,"accel_y":-0.675,"accel_z":-1.225,"gyro_x":0.250,"gyro_y":0.461,"gyro_z":0.681}
+{"accel_x":-1.680,"accel_y":-0.204,"accel_z":-1.570,"gyro_x":0.599,"gyro_y":0.334,"gyro_z":0.718}
+{"accel_x":-2.041,"accel_y":-0.509,"accel_z":-1.437,"gyro_x":0.503,"gyro_y":-0.208,"gyro_z":0.128}
+{"accel_x":-2.107,"accel_y":-0.868,"accel_z":-1.211,"gyro_x":-0.266,"gyro_y":-0.382,"gyro_z":-0.787}
+{"accel_x":-2.513,"accel_y":-0.646,"accel_z":-1.022,"gyro_x":-0.686,"gyro_y":-0.320,"gyro_z":-0.450}
+{"accel_x":-2.347,"accel_y":-1.148,"accel_z":-1.239,"gyro_x":-0.011,"gyro_y":0.302,"gyro_z":0.368}
+{"accel_x":-2.190,"accel_y":-0.340,"accel_z":-1.401,"gyro_x":0.445,"gyro_y":0.675,"gyro_z":1.019}
+{"accel_x":-1.694,"accel_y":0.061,"accel_z":-1.703,"gyro_x":0.539,"gyro_y":0.015,"gyro_z":0.746}
+LOOP: sample -2.036 -0.309 -1.401 -0.060 -0.515 -0.522
+{"accel_x":-2.036,"accel_y":-0.309,"accel_z":-1.401,"gyro_x":-0.060,"gyro_y":-0.515,"gyro_z":-0.522}
+{"accel_x":-2.692,"accel_y":-1.325,"accel_z":-0.826,"gyro_x":-1.951,"gyro_y":-0.589,"gyro_z":-2.169}
+{"accel_x":-2.179,"accel_y":-0.900,"accel_z":-1.274,"gyro_x":-0.297,"gyro_y":-0.204,"gyro_z":-0.376}
+{"accel_x":-2.085,"accel_y":-0.809,"accel_z":-1.316,"gyro_x":0.124,"gyro_y":0.245,"gyro_z":0.507}
+{"accel_x":-1.836,"accel_y":-0.652,"accel_z":-1.619,"gyro_x":0.612,"gyro_y":0.616,"gyro_z":1.010}
+{"accel_x":-1.535,"accel_y":-0.376,"accel_z":-1.852,"gyro_x":0.998,"gyro_y":0.178,"gyro_z":0.962}
+{"accel_x":-1.941,"accel_y":-0.339,"accel_z":-1.677,"gyro_x":0.152,"gyro_y":-0.228,"gyro_z":-0.415}
+{"accel_x":-1.944,"accel_y":-1.938,"accel_z":-1.339,"gyro_x":-1.595,"gyro_y":-0.953,"gyro_z":-2.641}
+{"accel_x":-1.980,"accel_y":-1.177,"accel_z":-1.362,"gyro_x":-0.046,"gyro_y":-0.068,"gyro_z":-0.017}
+{"accel_x":-2.049,"accel_y":-0.939,"accel_z":-1.456,"gyro_x":-0.023,"gyro_y":0.315,"gyro_z":0.642}
+{"accel_x":-1.721,"accel_y":-0.588,"accel_z":-1.762,"gyro_x":0.529,"gyro_y":0.259,"gyro_z":0.961}
+{"accel_x":-1.667,"accel_y":-0.200,"accel_z":-1.636,"gyro_x":0.005,"gyro_y":-0.266,"gyro_z":-0.412}
+{"accel_x":-2.119,"accel_y":-0.603,"accel_z":-1.369,"gyro_x":-0.158,"gyro_y":-0.398,"gyro_z":-0.101}
+{"accel_x":-2.309,"accel_y":-0.649,"accel_z":-1.215,"gyro_x":-0.019,"gyro_y":-0.128,"gyro_z":-0.084}
+{"accel_x":-2.161,"accel_y":-0.675,"accel_z":-1.283,"gyro_x":-0.047,"gyro_y":-0.027,"gyro_z":0.001}
+{"accel_x":-2.137,"accel_y":-0.602,"accel_z":-1.273,"gyro_x":-0.012,"gyro_y":-0.044,"gyro_z":-0.034}
+{"accel_x":-2.103,"accel_y":-0.575,"accel_z":-1.264,"gyro_x":-0.052,"gyro_y":-0.026,"gyro_z":-0.020}
+{"accel_x":-2.103,"accel_y":-0.574,"accel_z":-1.249,"gyro_x":-0.007,"gyro_y":-0.021,"gyro_z":-0.040}
+{"accel_x":-2.193,"accel_y":-0.672,"accel_z":-1.230,"gyro_x":-0.044,"gyro_y":-0.001,"gyro_z":-0.060}
+{"accel_x":-2.154,"accel_y":-0.670,"accel_z":-1.256,"gyro_x":-0.023,"gyro_y":0.021,"gyro_z":-0.016}
+LOOP: sample -2.093 -0.608 -1.295 -0.014 -0.028 -0.046
+{"accel_x":-2.093,"accel_y":-0.608,"accel_z":-1.295,"gyro_x":-0.014,"gyro_y":-0.028,"gyro_z":-0.046}
+{"accel_x":-2.111,"accel_y":-0.627,"accel_z":-1.262,"gyro_x":-0.029,"gyro_y":-0.010,"gyro_z":-0.049}
+{"accel_x":-2.131,"accel_y":-0.624,"accel_z":-1.244,"gyro_x":-0.008,"gyro_y":-0.019,"gyro_z":-0.036}
+{"accel_x":-2.140,"accel_y":-0.655,"accel_z":-1.251,"gyro_x":-0.017,"gyro_y":0.000,"gyro_z":-0.027}
+{"accel_x":-2.112,"accel_y":-0.662,"accel_z":-1.281,"gyro_x":-0.013,"gyro_y":0.000,"gyro_z":-0.014}
+{"accel_x":-2.160,"accel_y":-0.713,"accel_z":-1.280,"gyro_x":-0.003,"gyro_y":0.004,"gyro_z":-0.017}
+{"accel_x":-2.118,"accel_y":-0.672,"accel_z":-1.275,"gyro_x":-0.012,"gyro_y":0.005,"gyro_z":-0.008}
+{"accel_x":-2.090,"accel_y":-0.630,"accel_z":-1.289,"gyro_x":-0.019,"gyro_y":-0.014,"gyro_z":-0.042}
+{"accel_x":-2.138,"accel_y":-0.651,"accel_z":-1.260,"gyro_x":-0.011,"gyro_y":-0.010,"gyro_z":-0.030}
+{"accel_x":-2.117,"accel_y":-0.690,"accel_z":-1.277,"gyro_x":-0.023,"gyro_y":0.000,"gyro_z":-0.023}
+{"accel_x":-2.108,"accel_y":-0.665,"accel_z":-1.289,"gyro_x":-0.013,"gyro_y":-0.000,"gyro_z":-0.034}
+{"accel_x":-2.127,"accel_y":-0.675,"accel_z":-1.291,"gyro_x":-0.017,"gyro_y":-0.005,"gyro_z":-0.018}
+{"accel_x":-2.127,"accel_y":-0.659,"accel_z":-1.276,"gyro_x":-0.013,"gyro_y":-0.010,"gyro_z":-0.020}
+{"accel_x":-2.102,"accel_y":-0.673,"accel_z":-1.292,"gyro_x":-0.006,"gyro_y":-0.008,"gyro_z":-0.032}
+{"accel_x":-2.131,"accel_y":-0.706,"accel_z":-1.308,"gyro_x":0.005,"gyro_y":-0.011,"gyro_z":-0.022}
+{"accel_x":-2.137,"accel_y":-0.716,"accel_z":-1.280,"gyro_x":-0.015,"gyro_y":-0.002,"gyro_z":-0.015}
+{"accel_x":-2.091,"accel_y":-0.675,"accel_z":-1.296,"gyro_x":-0.009,"gyro_y":-0.004,"gyro_z":-0.025}
+{"accel_x":-2.132,"accel_y":-0.709,"accel_z":-1.289,"gyro_x":-0.002,"gyro_y":-0.020,"gyro_z":-0.025}
+{"accel_x":-2.116,"accel_y":-0.700,"accel_z":-1.301,"gyro_x":-0.016,"gyro_y":-0.003,"gyro_z":-0.015}
+{"accel_x":-2.103,"accel_y":-0.678,"accel_z":-1.290,"gyro_x":-0.020,"gyro_y":-0.002,"gyro_z":-0.021}
+LOOP: sample -2.107 -0.674 -1.314 -0.012 -0.013 -0.029
+{"accel_x":-2.107,"accel_y":-0.674,"accel_z":-1.314,"gyro_x":-0.012,"gyro_y":-0.013,"gyro_z":-0.029}
+{"accel_x":-2.101,"accel_y":-0.707,"accel_z":-1.296,"gyro_x":-0.021,"gyro_y":-0.010,"gyro_z":-0.020}
+{"accel_x":-2.118,"accel_y":-0.716,"accel_z":-1.298,"gyro_x":-0.008,"gyro_y":-0.005,"gyro_z":-0.012}
+{"accel_x":-2.133,"accel_y":-0.721,"accel_z":-1.282,"gyro_x":-0.038,"gyro_y":0.010,"gyro_z":-0.021}
+{"accel_x":-2.113,"accel_y":-0.716,"accel_z":-1.312,"gyro_x":-0.003,"gyro_y":-0.000,"gyro_z":-0.018}
+{"accel_x":-2.101,"accel_y":-0.712,"accel_z":-1.320,"gyro_x":-0.009,"gyro_y":-0.005,"gyro_z":-0.029}
+{"accel_x":-2.139,"accel_y":-0.722,"accel_z":-1.298,"gyro_x":-0.018,"gyro_y":-0.007,"gyro_z":-0.027}
+{"accel_x":-2.091,"accel_y":-0.683,"accel_z":-1.311,"gyro_x":-0.014,"gyro_y":0.001,"gyro_z":-0.025}
+{"accel_x":-2.114,"accel_y":-0.733,"accel_z":-1.321,"gyro_x":-0.009,"gyro_y":-0.021,"gyro_z":-0.027}
+{"accel_x":-2.112,"accel_y":-0.670,"accel_z":-1.293,"gyro_x":-0.020,"gyro_y":0.001,"gyro_z":-0.004}
+{"accel_x":-2.082,"accel_y":-0.682,"accel_z":-1.328,"gyro_x":-0.020,"gyro_y":-0.010,"gyro_z":-0.031}
+{"accel_x":-2.083,"accel_y":-0.679,"accel_z":-1.337,"gyro_x":-0.045,"gyro_y":-0.005,"gyro_z":-0.040}
+{"accel_x":-2.073,"accel_y":-0.669,"accel_z":-1.328,"gyro_x":-0.060,"gyro_y":-0.003,"gyro_z":-0.044}
+{"accel_x":-2.167,"accel_y":-0.734,"accel_z":-1.273,"gyro_x":-0.008,"gyro_y":-0.016,"gyro_z":-0.039}
+{"accel_x":-2.058,"accel_y":-0.694,"accel_z":-1.281,"gyro_x":-0.013,"gyro_y":-0.040,"gyro_z":-0.042}
+LOOP: sample -2.148 -0.693 -1.261 -0.023 0.051 -0.053
+{"accel_x":-2.148,"accel_y":-0.693,"accel_z":-1.261,"gyro_x":-0.023,"gyro_y":0.051,"gyro_z":-0.053}
+{"accel_x":-2.110,"accel_y":-0.822,"accel_z":-1.376,"gyro_x":0.003,"gyro_y":-0.019,"gyro_z":-0.028}
+{"accel_x":-2.089,"accel_y":-0.690,"accel_z":-1.338,"gyro_x":-0.024,"gyro_y":-0.017,"gyro_z":-0.006}
+{"accel_x":-2.025,"accel_y":-0.718,"accel_z":-1.361,"gyro_x":-0.027,"gyro_y":-0.015,"gyro_z":-0.035}
+{"accel_x":-2.148,"accel_y":-0.747,"accel_z":-1.265,"gyro_x":-0.026,"gyro_y":-0.015,"gyro_z":-0.059}
+{"accel_x":-2.158,"accel_y":-0.839,"accel_z":-1.259,"gyro_x":-0.013,"gyro_y":0.016,"gyro_z":-0.005}
+{"accel_x":-2.034,"accel_y":-0.688,"accel_z":-1.340,"gyro_x":0.001,"gyro_y":0.009,"gyro_z":-0.031}
+{"accel_x":-2.055,"accel_y":-0.770,"accel_z":-1.385,"gyro_x":-0.018,"gyro_y":0.022,"gyro_z":-0.052}
+{"accel_x":-2.054,"accel_y":-0.788,"accel_z":-1.401,"gyro_x":-0.025,"gyro_y":-0.017,"gyro_z":-0.040}
+{"accel_x":-2.107,"accel_y":-0.782,"accel_z":-1.290,"gyro_x":-0.041,"gyro_y":0.015,"gyro_z":-0.017}
+{"accel_x":-2.088,"accel_y":-0.788,"accel_z":-1.334,"gyro_x":-0.004,"gyro_y":-0.012,"gyro_z":-0.020}
+{"accel_x":-2.036,"accel_y":-0.786,"accel_z":-1.405,"gyro_x":-0.009,"gyro_y":0.003,"gyro_z":-0.013}
+{"accel_x":-2.055,"accel_y":-0.771,"accel_z":-1.396,"gyro_x":-0.023,"gyro_y":-0.014,"gyro_z":-0.030}
+{"accel_x":-2.072,"accel_y":-0.781,"accel_z":-1.337,"gyro_x":-0.016,"gyro_y":-0.029,"gyro_z":-0.024}
+{"accel_x":-2.082,"accel_y":-0.761,"accel_z":-1.321,"gyro_x":-0.010,"gyro_y":-0.016,"gyro_z":-0.028}
+{"accel_x":-2.097,"accel_y":-0.832,"accel_z":-1.304,"gyro_x":-0.015,"gyro_y":0.014,"gyro_z":-0.007}
+{"accel_x":-2.039,"accel_y":-0.727,"accel_z":-1.343,"gyro_x":-0.016,"gyro_y":0.027,"gyro_z":-0.025}
+{"accel_x":-2.018,"accel_y":-0.788,"accel_z":-1.445,"gyro_x":0.010,"gyro_y":0.010,"gyro_z":-0.026}
+{"accel_x":-2.023,"accel_y":-0.794,"accel_z":-1.460,"gyro_x":-0.020,"gyro_y":-0.026,"gyro_z":-0.038}
+{"accel_x":-2.072,"accel_y":-0.808,"accel_z":-1.347,"gyro_x":-0.039,"gyro_y":-0.009,"gyro_z":-0.044}
+LOOP: sample -2.031 -0.739 -1.315 -0.052 -0.007 -0.034
+{"accel_x":-2.031,"accel_y":-0.739,"accel_z":-1.315,"gyro_x":-0.052,"gyro_y":-0.007,"gyro_z":-0.034}
+{"accel_x":-2.111,"accel_y":-0.879,"accel_z":-1.375,"gyro_x":0.015,"gyro_y":0.002,"gyro_z":-0.061}
+{"accel_x":-2.267,"accel_y":-1.092,"accel_z":-1.244,"gyro_x":0.028,"gyro_y":-0.012,"gyro_z":0.015}
+{"accel_x":-1.913,"accel_y":-0.634,"accel_z":-1.384,"gyro_x":-0.016,"gyro_y":0.030,"gyro_z":0.004}
+{"accel_x":-1.938,"accel_y":-0.700,"accel_z":-1.450,"gyro_x":0.008,"gyro_y":0.013,"gyro_z":-0.067}
+{"accel_x":-2.058,"accel_y":-0.867,"accel_z":-1.467,"gyro_x":-0.009,"gyro_y":0.011,"gyro_z":-0.039}
+{"accel_x":-2.082,"accel_y":-0.864,"accel_z":-1.371,"gyro_x":-0.012,"gyro_y":-0.019,"gyro_z":-0.008}
