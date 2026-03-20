@@ -10,6 +10,7 @@ setup.py
 ../../build/imu_reader/imu_reader.egg-info/zip-safe
 imu_reader/__init__.py
 imu_reader/imu_reader.py
+launch/arm_launch.py
 resource/imu_reader
 test/test_copyright.py
 test/test_flake8.py

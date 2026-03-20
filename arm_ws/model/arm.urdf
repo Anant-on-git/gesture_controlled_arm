@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<robot name="three_dof_arm">
+
+  <!-- ================= MATERIALS ================= -->
+  <material name="gray">
+    <color rgba="0.6 0.6 0.6 1"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.2 0.2 0.8 1"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.2 0.8 0.2 1"/>
+  </material>
+
+  <!-- ================= BASE ================= -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.1" length="0.1"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.1" length="0.1"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.01"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- ================= ROTARY LINK (KEY FIX) ================= -->
+  <link name="rotary_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.05"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.05"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.005" iyy="0.005" izz="0.005"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- ================= LINK 1 ================= -->
+  <link name="link1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.04" length="0.5"/>
+      </geometry>
+      <origin xyz="0.25 0 0" rpy="0 1.5708 0"/>
+      <material name="blue"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.04" length="0.5"/>
+      </geometry>
+      <origin xyz="0.25 0 0" rpy="0 1.5708 0"/>
+    </collision>
+
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0.25 0 0"/>
+      <inertia ixx="0.02" iyy="0.02" izz="0.01"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- ================= LINK 2 ================= -->
+  <link name="link2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.035" length="0.4"/>
+      </geometry>
+      <origin xyz="0.2 0 0" rpy="0 1.5708 0"/>
+      <material name="green"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.035" length="0.4"/>
+      </geometry>
+      <origin xyz="0.2 0 0" rpy="0 1.5708 0"/>
+    </collision>
+
+    <inertial>
+      <mass value="0.8"/>
+      <origin xyz="0.2 0 0"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.008"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- ================= JOINTS ================= -->
+
+  <!-- DOF 1: Base Yaw -->
+  <joint name="joint_yaw" type="revolute">
+    <parent link="base_link"/>
+    <child link="rotary_link"/>
+    <origin xyz="0 0 0.05"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper="3.14" effort="10" velocity="1"/>
+  </joint>
+
+  <!-- DOF 2: Shoulder Pitch -->
+  <joint name="joint_pitch" type="revolute">
+    <parent link="rotary_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+  </joint>
+
+  <!-- DOF 3: Elbow -->
+  <joint name="joint_elbow" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0.5 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+  </joint>
+
+</robot>
