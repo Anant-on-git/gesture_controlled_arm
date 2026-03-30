@@ -21,6 +21,16 @@ def generate_launch_description():
             output='screen',
         ),
         Node(
+            package='controller',
+            executable='controller',
+            output='screen',
+        ),
+        Node(
+            package='ik_solver',
+            executable='ik_solver',
+            output='screen',
+        ),
+        Node(
             package='rviz2',
             executable='rviz2',
             output='screen',

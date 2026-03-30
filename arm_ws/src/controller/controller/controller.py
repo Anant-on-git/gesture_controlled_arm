@@ -16,6 +16,8 @@ class ControllerNode(Node):
         self.declare_parameter("motion_release_threshold", 0.6)
         self.declare_parameter("max_motion_accel", 4.0)
         self.declare_parameter("motion_ramp_gain", 1.5)
+        self.declare_parameter("displacement_scale", 0.02)
+        self.declare_parameter("displacement_topic", "/controller/displacement")
 
         window_size = max(1, int(self.get_parameter("moving_average_window").value))
         self.accel_window = deque(maxlen=window_size)
@@ -36,6 +38,8 @@ class ControllerNode(Node):
         )
         self.max_motion_accel = float(self.get_parameter("max_motion_accel").value)
         self.motion_ramp_gain = float(self.get_parameter("motion_ramp_gain").value)
+        self.displacement_scale = float(self.get_parameter("displacement_scale").value)
+        self.displacement_topic = str(self.get_parameter("displacement_topic").value)
 
         if self.motion_release_threshold > self.motion_engage_threshold:
             self.get_logger().warn(
@@ -54,6 +58,12 @@ class ControllerNode(Node):
         self.gravity_estimate: Optional[Tuple[float, float, float]] = None
         self.last_sample_time: Optional[float] = None
 
+        self.displacement_publisher = self.create_publisher(
+            Vector3Stamped,
+            self.displacement_topic,
+            10,
+        )
+
         self.create_subscription(
             Vector3Stamped,
             "/imu/accel",
@@ -63,7 +73,8 @@ class ControllerNode(Node):
 
         self.get_logger().info(
             "Controller ready: avg_window=%d gravity_alpha=%.3f motion_engage=%.2f "
-            "motion_release=%.2f max_motion_accel=%.2f motion_ramp_gain=%.2f"
+            "motion_release=%.2f max_motion_accel=%.2f motion_ramp_gain=%.2f "
+            "displacement_scale=%.3f topic=%s"
             % (
                 self.accel_window.maxlen,
                 self.gravity_alpha,
@@ -71,6 +82,8 @@ class ControllerNode(Node):
                 self.motion_release_threshold,
                 self.max_motion_accel,
                 self.motion_ramp_gain,
+                self.displacement_scale,
+                self.displacement_topic,
             )
         )
 
@@ -149,9 +162,16 @@ class ControllerNode(Node):
         cmd_y = self.axis_command("y", lin_y, dt)
         cmd_z = self.axis_command("z", lin_z, dt)
 
+        displacement_msg = Vector3Stamped()
+        displacement_msg.header = msg.header
+        displacement_msg.vector.x = cmd_x * self.displacement_scale * dt
+        displacement_msg.vector.y = cmd_y * self.displacement_scale * dt
+        displacement_msg.vector.z = cmd_z * self.displacement_scale * dt
+        self.displacement_publisher.publish(displacement_msg)
+
         self.get_logger().info(
             "avg=(%.3f, %.3f, %.3f) lin=(%.3f, %.3f, %.3f) cmd=(%.2f, %.2f, %.2f) "
-            "dir=(%d, %d, %d) held=(%.2f, %.2f, %.2f)s"
+            "disp=(%.4f, %.4f, %.4f) dir=(%d, %d, %d) held=(%.2f, %.2f, %.2f)s"
             % (
                 avg_x,
                 avg_y,
@@ -162,6 +182,9 @@ class ControllerNode(Node):
                 cmd_x,
                 cmd_y,
                 cmd_z,
+                displacement_msg.vector.x,
+                displacement_msg.vector.y,
+                displacement_msg.vector.z,
                 self.current_motion_direction["x"],
                 self.current_motion_direction["y"],
                 self.current_motion_direction["z"],

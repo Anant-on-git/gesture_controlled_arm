@@ -1,0 +1,27 @@
+[1.237s] Invoking command in '/home/anant/gesture_controlled_arm/arm_ws/src/controller': PYTHONPATH=/home/anant/gesture_controlled_arm/arm_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/anant/gesture_controlled_arm/arm_ws/build/controller/build install --record /home/anant/gesture_controlled_arm/arm_ws/build/controller/install.log --single-version-externally-managed install_data
+[1.472s] running egg_info
+[1.485s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[1.486s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[1.486s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[1.486s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[1.487s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[1.517s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.519s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.519s] running build
+[1.519s] running build_py
+[1.519s] copying controller/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/build/controller/build/lib/controller
+[1.520s] copying controller/controller.py -> /home/anant/gesture_controlled_arm/arm_ws/build/controller/build/lib/controller
+[1.520s] running install
+[1.523s] running install_lib
+[1.539s] copying /home/anant/gesture_controlled_arm/arm_ws/build/controller/build/lib/controller/controller.py -> /home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages/controller
+[1.540s] byte-compiling /home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages/controller/controller.py to controller.cpython-310.pyc
+[1.541s] running install_data
+[1.541s] copying resource/controller -> /home/anant/gesture_controlled_arm/arm_ws/install/controller/share/ament_index/resource_index/packages
+[1.541s] copying package.xml -> /home/anant/gesture_controlled_arm/arm_ws/install/controller/share/controller
+[1.542s] running install_egg_info
+[1.558s] removing '/home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.558s] Copying ../../build/controller/controller.egg-info to /home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[1.559s] running install_scripts
+[1.590s] Installing controller script to /home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/controller
+[1.590s] writing list of installed files to '/home/anant/gesture_controlled_arm/arm_ws/build/controller/install.log'
+[1.627s] Invoked command in '/home/anant/gesture_controlled_arm/arm_ws/src/controller' returned '0': PYTHONPATH=/home/anant/gesture_controlled_arm/arm_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/anant/gesture_controlled_arm/arm_ws/build/controller/build install --record /home/anant/gesture_controlled_arm/arm_ws/build/controller/install.log --single-version-externally-managed install_data
