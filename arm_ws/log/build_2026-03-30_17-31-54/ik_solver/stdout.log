@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/ik_solver/ik_solver.egg-info
+writing ../../build/ik_solver/ik_solver.egg-info/PKG-INFO
+writing dependency_links to ../../build/ik_solver/ik_solver.egg-info/dependency_links.txt
+writing entry points to ../../build/ik_solver/ik_solver.egg-info/entry_points.txt
+writing requirements to ../../build/ik_solver/ik_solver.egg-info/requires.txt
+writing top-level names to ../../build/ik_solver/ik_solver.egg-info/top_level.txt
+writing manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'
+reading manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'
+writing manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver
+copying ik_solver/ik_solver.py -> /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver
+copying ik_solver/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver
+running install
+running install_lib
+creating /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver
+copying /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver/ik_solver.py -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver
+copying /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver
+byte-compiling /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver/ik_solver.py to ik_solver.cpython-310.pyc
+byte-compiling /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ament_index/resource_index/packages
+copying resource/ik_solver -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ament_index/resource_index/packages
+copying package.xml -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ik_solver
+running install_egg_info
+Copying ../../build/ik_solver/ik_solver.egg-info to /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ik_solver script to /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/ik_solver
+writing list of installed files to '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/install.log'

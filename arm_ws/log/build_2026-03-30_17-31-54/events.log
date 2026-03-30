@@ -1,0 +1,348 @@
+[0.000000] (-) TimerEvent: {}
+[0.000120] (-) JobUnselected: {'identifier': 'controller'}
+[0.000141] (-) JobUnselected: {'identifier': 'imu_reader'}
+[0.000155] (ik_solver) JobQueued: {'identifier': 'ik_solver', 'dependencies': OrderedDict()}
+[0.000169] (ik_solver) JobStarted: {'identifier': 'ik_solver'}
+[0.099120] (-) TimerEvent: {}
+[0.199331] (-) TimerEvent: {}
+[0.299528] (-) TimerEvent: {}
+[0.399733] (-) TimerEvent: {}
+[0.499933] (-) TimerEvent: {}
+[0.600138] (-) TimerEvent: {}
+[0.700358] (-) TimerEvent: {}
+[0.800587] (-) TimerEvent: {}
+[0.901127] (-) TimerEvent: {}
+[1.001431] (-) TimerEvent: {}
+[1.101899] (-) TimerEvent: {}
+[1.202142] (-) TimerEvent: {}
+[1.303127] (-) TimerEvent: {}
+[1.403381] (-) TimerEvent: {}
+[1.503558] (-) TimerEvent: {}
+[1.603831] (-) TimerEvent: {}
+[1.704141] (-) TimerEvent: {}
+[1.804384] (-) TimerEvent: {}
+[1.904603] (-) TimerEvent: {}
+[2.004799] (-) TimerEvent: {}
+[2.104992] (-) TimerEvent: {}
+[2.205150] (-) TimerEvent: {}
+[2.305378] (-) TimerEvent: {}
+[2.405625] (-) TimerEvent: {}
+[2.505783] (-) TimerEvent: {}
+[2.606004] (-) TimerEvent: {}
+[2.706208] (-) TimerEvent: {}
+[2.806452] (-) TimerEvent: {}
+[2.906717] (-) TimerEvent: {}
+[3.006980] (-) TimerEvent: {}
+[3.107613] (-) TimerEvent: {}
+[3.207899] (-) TimerEvent: {}
+[3.308428] (-) TimerEvent: {}
+[3.408726] (-) TimerEvent: {}
+[3.509454] (-) TimerEvent: {}
+[3.610088] (-) TimerEvent: {}
+[3.710287] (-) TimerEvent: {}
+[3.810915] (-) TimerEvent: {}
+[3.911170] (-) TimerEvent: {}
+[4.011605] (-) TimerEvent: {}
+[4.111860] (-) TimerEvent: {}
+[4.212046] (-) TimerEvent: {}
+[4.312231] (-) TimerEvent: {}
+[4.412412] (-) TimerEvent: {}
+[4.512662] (-) TimerEvent: {}
+[4.612913] (-) TimerEvent: {}
+[4.713362] (-) TimerEvent: {}
+[4.814139] (-) TimerEvent: {}
+[4.914305] (-) TimerEvent: {}
+[5.014463] (-) TimerEvent: {}
+[5.114685] (-) TimerEvent: {}
+[5.214904] (-) TimerEvent: {}
+[5.315207] (-) TimerEvent: {}
+[5.415426] (-) TimerEvent: {}
+[5.515680] (-) TimerEvent: {}
+[5.615869] (-) TimerEvent: {}
+[5.716078] (-) TimerEvent: {}
+[5.816226] (-) TimerEvent: {}
+[5.920277] (-) TimerEvent: {}
+[6.020515] (-) TimerEvent: {}
+[6.120716] (-) TimerEvent: {}
+[6.220959] (-) TimerEvent: {}
+[6.321213] (-) TimerEvent: {}
+[6.421757] (-) TimerEvent: {}
+[6.521954] (-) TimerEvent: {}
+[6.622111] (-) TimerEvent: {}
+[6.722306] (-) TimerEvent: {}
+[6.822501] (-) TimerEvent: {}
+[6.922696] (-) TimerEvent: {}
+[7.022907] (-) TimerEvent: {}
+[7.123115] (-) TimerEvent: {}
+[7.223295] (-) TimerEvent: {}
+[7.323483] (-) TimerEvent: {}
+[7.423668] (-) TimerEvent: {}
+[7.523839] (-) TimerEvent: {}
+[7.624043] (-) TimerEvent: {}
+[7.724255] (-) TimerEvent: {}
+[7.824505] (-) TimerEvent: {}
+[7.924733] (-) TimerEvent: {}
+[8.024933] (-) TimerEvent: {}
+[8.125140] (-) TimerEvent: {}
+[8.225814] (-) TimerEvent: {}
+[8.326041] (-) TimerEvent: {}
+[8.426509] (-) TimerEvent: {}
+[8.526751] (-) TimerEvent: {}
+[8.626984] (-) TimerEvent: {}
+[8.727225] (-) TimerEvent: {}
+[8.827406] (-) TimerEvent: {}
+[8.927616] (-) TimerEvent: {}
+[9.027795] (-) TimerEvent: {}
+[9.127961] (-) TimerEvent: {}
+[9.228657] (-) TimerEvent: {}
+[9.328913] (-) TimerEvent: {}
+[9.429332] (-) TimerEvent: {}
+[9.529585] (-) TimerEvent: {}
+[9.629873] (-) TimerEvent: {}
+[9.730461] (-) TimerEvent: {}
+[9.830710] (-) TimerEvent: {}
+[9.930915] (-) TimerEvent: {}
+[10.031247] (-) TimerEvent: {}
+[10.131509] (-) TimerEvent: {}
+[10.231964] (-) TimerEvent: {}
+[10.332206] (-) TimerEvent: {}
+[10.432676] (-) TimerEvent: {}
+[10.532821] (-) TimerEvent: {}
+[10.633008] (-) TimerEvent: {}
+[10.733577] (-) TimerEvent: {}
+[10.833812] (-) TimerEvent: {}
+[10.934232] (-) TimerEvent: {}
+[11.034488] (-) TimerEvent: {}
+[11.134758] (-) TimerEvent: {}
+[11.235251] (-) TimerEvent: {}
+[11.335572] (-) TimerEvent: {}
+[11.436038] (-) TimerEvent: {}
+[11.536282] (-) TimerEvent: {}
+[11.636771] (-) TimerEvent: {}
+[11.736972] (-) TimerEvent: {}
+[11.837154] (-) TimerEvent: {}
+[11.937520] (-) TimerEvent: {}
+[12.037871] (-) TimerEvent: {}
+[12.138167] (-) TimerEvent: {}
+[12.238431] (-) TimerEvent: {}
+[12.338900] (-) TimerEvent: {}
+[12.439436] (-) TimerEvent: {}
+[12.539954] (-) TimerEvent: {}
+[12.640496] (-) TimerEvent: {}
+[12.740895] (-) TimerEvent: {}
+[12.841073] (-) TimerEvent: {}
+[12.941647] (-) TimerEvent: {}
+[13.041916] (-) TimerEvent: {}
+[13.142136] (-) TimerEvent: {}
+[13.242437] (-) TimerEvent: {}
+[13.342798] (-) TimerEvent: {}
+[13.443410] (-) TimerEvent: {}
+[13.543829] (-) TimerEvent: {}
+[13.644386] (-) TimerEvent: {}
+[13.744739] (-) TimerEvent: {}
+[13.845307] (-) TimerEvent: {}
+[13.945530] (-) TimerEvent: {}
+[14.045774] (-) TimerEvent: {}
+[14.146023] (-) TimerEvent: {}
+[14.246230] (-) TimerEvent: {}
+[14.346513] (-) TimerEvent: {}
+[14.446762] (-) TimerEvent: {}
+[14.547025] (-) TimerEvent: {}
+[14.647734] (-) TimerEvent: {}
+[14.748024] (-) TimerEvent: {}
+[14.848319] (-) TimerEvent: {}
+[14.948551] (-) TimerEvent: {}
+[15.048776] (-) TimerEvent: {}
+[15.149266] (-) TimerEvent: {}
+[15.249579] (-) TimerEvent: {}
+[15.350345] (-) TimerEvent: {}
+[15.450680] (-) TimerEvent: {}
+[15.551004] (-) TimerEvent: {}
+[15.651328] (-) TimerEvent: {}
+[15.751648] (-) TimerEvent: {}
+[15.851982] (-) TimerEvent: {}
+[15.952493] (-) TimerEvent: {}
+[16.053156] (-) TimerEvent: {}
+[16.153431] (-) TimerEvent: {}
+[16.253760] (-) TimerEvent: {}
+[16.354047] (-) TimerEvent: {}
+[16.454307] (-) TimerEvent: {}
+[16.554597] (-) TimerEvent: {}
+[16.654828] (-) TimerEvent: {}
+[16.755115] (-) TimerEvent: {}
+[16.855389] (-) TimerEvent: {}
+[16.955670] (-) TimerEvent: {}
+[17.056142] (-) TimerEvent: {}
+[17.156370] (-) TimerEvent: {}
+[17.256628] (-) TimerEvent: {}
+[17.357192] (-) TimerEvent: {}
+[17.457497] (-) TimerEvent: {}
+[17.557719] (-) TimerEvent: {}
+[17.658002] (-) TimerEvent: {}
+[17.758251] (-) TimerEvent: {}
+[17.858460] (-) TimerEvent: {}
+[17.958669] (-) TimerEvent: {}
+[18.059218] (-) TimerEvent: {}
+[18.159606] (-) TimerEvent: {}
+[18.259886] (-) TimerEvent: {}
+[18.360192] (-) TimerEvent: {}
+[18.460603] (-) TimerEvent: {}
+[18.561240] (-) TimerEvent: {}
+[18.661596] (-) TimerEvent: {}
+[18.762234] (-) TimerEvent: {}
+[18.862528] (-) TimerEvent: {}
+[18.963071] (-) TimerEvent: {}
+[19.063368] (-) TimerEvent: {}
+[19.163662] (-) TimerEvent: {}
+[19.263980] (-) TimerEvent: {}
+[19.364270] (-) TimerEvent: {}
+[19.464573] (-) TimerEvent: {}
+[19.564845] (-) TimerEvent: {}
+[19.665094] (-) TimerEvent: {}
+[19.765379] (-) TimerEvent: {}
+[19.865655] (-) TimerEvent: {}
+[19.965870] (-) TimerEvent: {}
+[20.066146] (-) TimerEvent: {}
+[20.166403] (-) TimerEvent: {}
+[20.266946] (-) TimerEvent: {}
+[20.367229] (-) TimerEvent: {}
+[20.467564] (-) TimerEvent: {}
+[20.567954] (-) TimerEvent: {}
+[20.668233] (-) TimerEvent: {}
+[20.768729] (-) TimerEvent: {}
+[20.868969] (-) TimerEvent: {}
+[20.969595] (-) TimerEvent: {}
+[21.069825] (-) TimerEvent: {}
+[21.170180] (-) TimerEvent: {}
+[21.270447] (-) TimerEvent: {}
+[21.370717] (-) TimerEvent: {}
+[21.471006] (-) TimerEvent: {}
+[21.571291] (-) TimerEvent: {}
+[21.671738] (-) TimerEvent: {}
+[21.772252] (-) TimerEvent: {}
+[21.872646] (-) TimerEvent: {}
+[21.973154] (-) TimerEvent: {}
+[22.073410] (-) TimerEvent: {}
+[22.173647] (-) TimerEvent: {}
+[22.274395] (-) TimerEvent: {}
+[22.374769] (-) TimerEvent: {}
+[22.475396] (-) TimerEvent: {}
+[22.575768] (-) TimerEvent: {}
+[22.676068] (-) TimerEvent: {}
+[22.776392] (-) TimerEvent: {}
+[22.876724] (-) TimerEvent: {}
+[22.977030] (-) TimerEvent: {}
+[23.077326] (-) TimerEvent: {}
+[23.177885] (-) TimerEvent: {}
+[23.278159] (-) TimerEvent: {}
+[23.401565] (-) TimerEvent: {}
+[23.501836] (-) TimerEvent: {}
+[23.602228] (-) TimerEvent: {}
+[23.702594] (-) TimerEvent: {}
+[23.802879] (-) TimerEvent: {}
+[23.940590] (-) TimerEvent: {}
+[24.040850] (-) TimerEvent: {}
+[24.141180] (-) TimerEvent: {}
+[24.241429] (-) TimerEvent: {}
+[24.341732] (-) TimerEvent: {}
+[24.442526] (-) TimerEvent: {}
+[24.566246] (-) TimerEvent: {}
+[24.666525] (-) TimerEvent: {}
+[24.767126] (-) TimerEvent: {}
+[24.867420] (-) TimerEvent: {}
+[24.967682] (-) TimerEvent: {}
+[25.067940] (-) TimerEvent: {}
+[25.168167] (-) TimerEvent: {}
+[25.268387] (-) TimerEvent: {}
+[25.368614] (-) TimerEvent: {}
+[25.469161] (-) TimerEvent: {}
+[25.569415] (-) TimerEvent: {}
+[25.669600] (-) TimerEvent: {}
+[25.769886] (-) TimerEvent: {}
+[25.870115] (-) TimerEvent: {}
+[25.970363] (-) TimerEvent: {}
+[26.070767] (-) TimerEvent: {}
+[26.171032] (-) TimerEvent: {}
+[26.271258] (-) TimerEvent: {}
+[26.371451] (-) TimerEvent: {}
+[26.471645] (-) TimerEvent: {}
+[26.571844] (-) TimerEvent: {}
+[26.672067] (-) TimerEvent: {}
+[26.772336] (-) TimerEvent: {}
+[26.872625] (-) TimerEvent: {}
+[26.972831] (-) TimerEvent: {}
+[27.073080] (-) TimerEvent: {}
+[27.173301] (-) TimerEvent: {}
+[27.273682] (-) TimerEvent: {}
+[27.373950] (-) TimerEvent: {}
+[27.474375] (-) TimerEvent: {}
+[27.574531] (-) TimerEvent: {}
+[27.674722] (-) TimerEvent: {}
+[27.774964] (-) TimerEvent: {}
+[27.875232] (-) TimerEvent: {}
+[27.976237] (-) TimerEvent: {}
+[28.076463] (-) TimerEvent: {}
+[28.177195] (-) TimerEvent: {}
+[28.277528] (-) TimerEvent: {}
+[28.377794] (-) TimerEvent: {}
+[28.478016] (-) TimerEvent: {}
+[28.578235] (-) TimerEvent: {}
+[28.678559] (-) TimerEvent: {}
+[28.778827] (-) TimerEvent: {}
+[28.879038] (-) TimerEvent: {}
+[28.979310] (-) TimerEvent: {}
+[29.079582] (-) TimerEvent: {}
+[29.179852] (-) TimerEvent: {}
+[29.280089] (-) TimerEvent: {}
+[29.380341] (-) TimerEvent: {}
+[29.480586] (-) TimerEvent: {}
+[29.580811] (-) TimerEvent: {}
+[29.681007] (-) TimerEvent: {}
+[29.781234] (-) TimerEvent: {}
+[29.881436] (-) TimerEvent: {}
+[29.981663] (-) TimerEvent: {}
+[30.081886] (-) TimerEvent: {}
+[30.182105] (-) TimerEvent: {}
+[30.282289] (-) TimerEvent: {}
+[30.382463] (-) TimerEvent: {}
+[30.482743] (-) TimerEvent: {}
+[30.582924] (-) TimerEvent: {}
+[30.652997] (ik_solver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ik_solver', 'build', '--build-base', '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build', 'install', '--record', '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/anant/gesture_controlled_arm/arm_ws/src/ik_solver', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/anant/gz_ws/src/ardupilot_gazebo/build:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/anant', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/home/anant/gz_ws/src/ardupilot_gazebo/models:/home/anant/gz_ws/src/ardupilot_gazebo/worlds:', 'LANGUAGE': 'en_IN:en', 'USER': 'anant', 'SNAP_COMMON': '/var/snap/code/common', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-gb","osLocale":"en-in","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/230/usr/share/code/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/anant/snap/code/common/.cache/gio-modules', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'SNAP_UID': '1000', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/anant/ros2_ws/install/orbbec_camera/lib:/home/anant/ros2_ws/install/orbbec_camera_msgs/lib:/home/anant/ros2_ws/install/micro_ros_agent/lib:/home/anant/ros2_ws/install/micro_ros_msgs/lib:/home/anant/astra_ws/install/libuvc/lib:/home/anant/astra_ws/install/astra_camera/lib:/home/anant/astra_ws/install/astra_camera_msgs/lib:/home/anant/IRC26_ws/install/serial_bridge_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/anant', 'CHROME_DESKTOP': 'code.desktop', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32', 'DESKTOP_SESSION': 'ubuntu', 'SNAP_USER_DATA': '/home/anant/snap/code/230', 'GTK_PATH': '/snap/code/230/usr/lib/x86_64-linux-gnu/gtk-3.0', 'NVM_BIN': '/home/anant/.nvm/versions/node/v24.13.1/bin', 'NVM_INC': '/home/anant/.nvm/versions/node/v24.13.1/include/node', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-106193da-1.11-main.sock', 'GTK_IM_MODULE_FILE': '/home/anant/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '1747', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2041', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '230', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3324', 'NVM_DIR': '/home/anant/.nvm', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'COLCON_PREFIX_PATH': '/home/anant/gesture_controlled_arm/arm_ws/install:/home/anant/astra_ws/install:/home/anant/IRC26_ws/install:/home/anant/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'anant', 'SNAP_CONTEXT': 'HsGtjjmq7XQ-1jqsXs7x8UotslLeclhyiC1JaRz2dS_zhFEVZC-J', 'JOURNAL_STREAM': '8:4781', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PKG_CONFIG_PATH': '/home/anant/astra_ws/install/libuvc/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': '07ff9d61', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/home/anant/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'RUST_LOG': 'warn', 'USERNAME': 'anant', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SNAP_INSTANCE_NAME': 'code', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/lib/ccache:/home/anant/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/anant/.local/bin:/home/anant/.codex/tmp/arg0/codex-arg0hxfYQa:/usr/lib/ccache:/home/anant/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/anant/.local/bin:/home/anant/.nvm/versions/node/v24.13.1/bin:/opt/ros/humble/bin:/usr/lib/ccache:/home/anant/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/anant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/anant/ardupilot/Tools/autotest:/home/anant/.vscode/extensions/openai.chatgpt-26.325.31654-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/anant-ROG-Strix-G513RC-G513RC:@/tmp/.ICE-unix/2013,unix/anant-ROG-Strix-G513RC-G513RC:/tmp/.ICE-unix/2013', 'GTK_EXE_PREFIX': '/snap/code/230/usr', 'INVOCATION_ID': '61506b6cf2b54ce99a2f07ec4a48bf9b', 'XDG_MENU_PREFIX': 'gnome-', 'SNAP_DATA': '/var/snap/code/230', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/230/usr/lib/locale', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XDG_DATA_HOME': '/home/anant/snap/code/230/.local/share', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SNAP_USER_COMMON': '/home/anant/snap/code/common', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/anant/snap/code/230/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '30', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/home/anant/gesture_controlled_arm/arm_ws/install/imu_reader:/home/anant/gesture_controlled_arm/arm_ws/install/controller:/home/anant/ros2_ws/install/orbbec_description:/home/anant/ros2_ws/install/orbbec_camera:/home/anant/ros2_ws/install/orbbec_camera_msgs:/home/anant/ros2_ws/install/obstacle_avoidance:/home/anant/ros2_ws/install/micro_ros_setup:/home/anant/ros2_ws/install/micro_ros_agent:/home/anant/ros2_ws/install/micro_ros_msgs:/home/anant/astra_ws/install/astra_camera:/home/anant/astra_ws/install/astra_camera_msgs:/home/anant/IRC26_ws/install/serial_bridge:/home/anant/IRC26_ws/install/serial_bridge_msgs:/home/anant/IRC26_ws/install/joy_control:/home/anant/IRC26_ws/install/joy_cmdvel:/home/anant/IRC26_ws/install/cmd_vel_wifi_bridge:/home/anant/IRC26_ws/install/cam:/opt/ros/humble', 'SNAP_COOKIE': 'HsGtjjmq7XQ-1jqsXs7x8UotslLeclhyiC1JaRz2dS_zhFEVZC-J', 'SHELL': '/bin/bash', 'GDK_PIXBUF_MODULEDIR': '/snap/code/230/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SNAP_NAME': 'code', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'CMAKE_MODULE_PATH': '/home/anant/astra_ws/install/libuvc/lib/cmake/libuvc', 'CODEX_THREAD_ID': '019d3e9a-0615-7e63-a028-451c9d1c208d', 'GDK_PIXBUF_MODULE_FILE': '/home/anant/snap/code/common/.cache/gdk-pixbuf-loaders.cache', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'SNAP_LAUNCHER_ARCH_TRIPLET': 'x86_64-linux-gnu', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver', 'VSCODE_CLI': '1', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SNAP_REAL_HOME': '/home/anant', 'VSCODE_CODE_CACHE_PATH': '/home/anant/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'XDG_DATA_DIRS': '/home/anant/snap/code/230/.local/share/flatpak/exports/share:/home/anant/snap/code/230/.local/share:/home/anant/snap/code/230:/snap/code/230/usr/share:/usr/share/ubuntu:/usr/share/gnome:/home/anant/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'SNAP_EUID': '1000', 'PYTHONPATH': '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages:/home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages:/home/anant/gesture_controlled_arm/arm_ws/install/controller/lib/python3.10/site-packages:/home/anant/ros2_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/anant/ros2_ws/install/obstacle_avoidance/lib/python3.10/site-packages:/home/anant/ros2_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/anant/astra_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/anant/IRC26_ws/install/serial_bridge/lib/python3.10/site-packages:/home/anant/IRC26_ws/install/serial_bridge_msgs/local/lib/python3.10/dist-packages:/home/anant/IRC26_ws/install/joy_control/lib/python3.10/site-packages:/home/anant/IRC26_ws/install/joy_cmdvel/lib/python3.10/site-packages:/home/anant/IRC26_ws/install/cmd_vel_wifi_bridge/lib/python3.10/site-packages:/home/anant/IRC26_ws/install/cam/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'SNAP': '/snap/code/230', 'COLCON': '1', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'CMAKE_PREFIX_PATH': '/home/anant/ros2_ws/install/orbbec_description:/home/anant/ros2_ws/install/orbbec_camera:/home/anant/ros2_ws/install/orbbec_camera_msgs:/home/anant/ros2_ws/install/micro_ros_setup:/home/anant/ros2_ws/install/micro_ros_agent:/home/anant/ros2_ws/install/micro_ros_msgs:/home/anant/astra_ws/install/libuvc:/home/anant/astra_ws/install/astra_camera:/home/anant/astra_ws/install/astra_camera_msgs:/home/anant/IRC26_ws/install/serial_bridge_msgs', 'VSCODE_PID': '3393'}, 'shell': False}
+[30.683040] (-) TimerEvent: {}
+[30.783227] (-) TimerEvent: {}
+[30.883419] (-) TimerEvent: {}
+[30.897956] (ik_solver) StdoutLine: {'line': b'running egg_info\n'}
+[30.898139] (ik_solver) StdoutLine: {'line': b'creating ../../build/ik_solver/ik_solver.egg-info\n'}
+[30.898211] (ik_solver) StdoutLine: {'line': b'writing ../../build/ik_solver/ik_solver.egg-info/PKG-INFO\n'}
+[30.898274] (ik_solver) StdoutLine: {'line': b'writing dependency_links to ../../build/ik_solver/ik_solver.egg-info/dependency_links.txt\n'}
+[30.898375] (ik_solver) StdoutLine: {'line': b'writing entry points to ../../build/ik_solver/ik_solver.egg-info/entry_points.txt\n'}
+[30.898439] (ik_solver) StdoutLine: {'line': b'writing requirements to ../../build/ik_solver/ik_solver.egg-info/requires.txt\n'}
+[30.898558] (ik_solver) StdoutLine: {'line': b'writing top-level names to ../../build/ik_solver/ik_solver.egg-info/top_level.txt\n'}
+[30.898615] (ik_solver) StdoutLine: {'line': b"writing manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'\n"}
+[30.898665] (ik_solver) StdoutLine: {'line': b"reading manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'\n"}
+[30.898708] (ik_solver) StdoutLine: {'line': b"writing manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'\n"}
+[30.898746] (ik_solver) StdoutLine: {'line': b'running build\n'}
+[30.898783] (ik_solver) StdoutLine: {'line': b'running build_py\n'}
+[30.898819] (ik_solver) StdoutLine: {'line': b'creating /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver\n'}
+[30.898856] (ik_solver) StdoutLine: {'line': b'copying ik_solver/ik_solver.py -> /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver\n'}
+[30.898893] (ik_solver) StdoutLine: {'line': b'copying ik_solver/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver\n'}
+[30.898928] (ik_solver) StdoutLine: {'line': b'running install\n'}
+[30.901264] (ik_solver) StdoutLine: {'line': b'running install_lib\n'}
+[30.914893] (ik_solver) StdoutLine: {'line': b'creating /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver\n'}
+[30.915125] (ik_solver) StdoutLine: {'line': b'copying /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver/ik_solver.py -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver\n'}
+[30.915214] (ik_solver) StdoutLine: {'line': b'copying /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver\n'}
+[30.915504] (ik_solver) StdoutLine: {'line': b'byte-compiling /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver/ik_solver.py to ik_solver.cpython-310.pyc\n'}
+[30.916777] (ik_solver) StdoutLine: {'line': b'byte-compiling /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver/__init__.py to __init__.cpython-310.pyc\n'}
+[30.916926] (ik_solver) StdoutLine: {'line': b'running install_data\n'}
+[30.917078] (ik_solver) StdoutLine: {'line': b'creating /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ament_index/resource_index/packages\n'}
+[30.917229] (ik_solver) StdoutLine: {'line': b'copying resource/ik_solver -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ament_index/resource_index/packages\n'}
+[30.917375] (ik_solver) StdoutLine: {'line': b'copying package.xml -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ik_solver\n'}
+[30.917512] (ik_solver) StdoutLine: {'line': b'running install_egg_info\n'}
+[30.931198] (ik_solver) StdoutLine: {'line': b'Copying ../../build/ik_solver/ik_solver.egg-info to /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver-0.0.0-py3.10.egg-info\n'}
+[30.931982] (ik_solver) StdoutLine: {'line': b'running install_scripts\n'}
+[30.959183] (ik_solver) StdoutLine: {'line': b'Installing ik_solver script to /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/ik_solver\n'}
+[30.959562] (ik_solver) StdoutLine: {'line': b"writing list of installed files to '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/install.log'\n"}
+[30.980205] (ik_solver) CommandEnded: {'returncode': 0}
+[30.983503] (-) TimerEvent: {}
+[30.992166] (ik_solver) JobEnded: {'identifier': 'ik_solver', 'rc': 0}
+[30.992685] (-) EventReactorShutdown: {}
