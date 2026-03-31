@@ -1,11 +1,15 @@
 from pathlib import Path
 
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
     urdf_path = Path("/home/anant/gesture_controlled_arm/arm_ws/model/arm.urdf")
+    rviz_config_path = (
+        Path(get_package_share_directory('imu_reader')) / 'rviz' / 'manual_test.rviz'
+    )
 
     return LaunchDescription([
         Node(
@@ -33,6 +37,7 @@ def generate_launch_description():
         Node(
             package='rviz2',
             executable='rviz2',
+            arguments=['-d', str(rviz_config_path)],
             output='screen',
         ),
         Node(

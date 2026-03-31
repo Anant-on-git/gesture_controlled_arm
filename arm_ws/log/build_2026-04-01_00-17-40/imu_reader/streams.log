@@ -1,0 +1,27 @@
+[1.093s] Invoking command in '/home/anant/gesture_controlled_arm/arm_ws/src/imu_reader': PYTHONPATH=/home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_reader build --build-base /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/build install --record /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/install.log --single-version-externally-managed install_data
+[1.293s] running egg_info
+[1.305s] writing ../../build/imu_reader/imu_reader.egg-info/PKG-INFO
+[1.305s] writing dependency_links to ../../build/imu_reader/imu_reader.egg-info/dependency_links.txt
+[1.306s] writing entry points to ../../build/imu_reader/imu_reader.egg-info/entry_points.txt
+[1.306s] writing requirements to ../../build/imu_reader/imu_reader.egg-info/requires.txt
+[1.306s] writing top-level names to ../../build/imu_reader/imu_reader.egg-info/top_level.txt
+[1.333s] reading manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+[1.335s] writing manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+[1.335s] running build
+[1.335s] running build_py
+[1.335s] copying imu_reader/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/build/lib/imu_reader
+[1.335s] copying imu_reader/imu_reader.py -> /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/build/lib/imu_reader
+[1.336s] running install
+[1.339s] running install_lib
+[1.352s] running install_data
+[1.352s] copying resource/imu_reader -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/ament_index/resource_index/packages
+[1.352s] copying package.xml -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/imu_reader
+[1.353s] copying launch/arm_launch.py -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/imu_reader/launch
+[1.353s] copying launch/manual_test.launch.py -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/imu_reader/launch
+[1.353s] running install_egg_info
+[1.367s] removing '/home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages/imu_reader-0.0.0-py3.10.egg-info' (and everything under it)
+[1.367s] Copying ../../build/imu_reader/imu_reader.egg-info to /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages/imu_reader-0.0.0-py3.10.egg-info
+[1.368s] running install_scripts
+[1.395s] Installing imu_reader script to /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/imu_reader
+[1.395s] writing list of installed files to '/home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/install.log'
+[1.435s] Invoked command in '/home/anant/gesture_controlled_arm/arm_ws/src/imu_reader' returned '0': PYTHONPATH=/home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_reader build --build-base /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/build install --record /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/install.log --single-version-externally-managed install_data
