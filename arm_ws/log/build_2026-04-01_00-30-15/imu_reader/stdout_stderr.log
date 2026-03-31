@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/imu_reader/imu_reader.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_reader/imu_reader.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_reader/imu_reader.egg-info/entry_points.txt
+writing requirements to ../../build/imu_reader/imu_reader.egg-info/requires.txt
+writing top-level names to ../../build/imu_reader/imu_reader.egg-info/top_level.txt
+reading manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+running build
+running build_py
+copying imu_reader/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/build/lib/imu_reader
+copying imu_reader/imu_reader.py -> /home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/build/lib/imu_reader
+running install
+running install_lib
+running install_data
+copying resource/imu_reader -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/ament_index/resource_index/packages
+copying package.xml -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/imu_reader
+copying launch/arm_launch.py -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/imu_reader/launch
+copying launch/manual_test.launch.py -> /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/share/imu_reader/launch
+running install_egg_info
+removing '/home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages/imu_reader-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/imu_reader/imu_reader.egg-info to /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/python3.10/site-packages/imu_reader-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_reader script to /home/anant/gesture_controlled_arm/arm_ws/install/imu_reader/lib/imu_reader
+writing list of installed files to '/home/anant/gesture_controlled_arm/arm_ws/build/imu_reader/install.log'

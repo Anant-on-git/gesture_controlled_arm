@@ -17,10 +17,6 @@ setup(
             os.path.join('share', package_name, 'launch'),
             glob('launch/*.py'),
         ),
-        (
-            os.path.join('share', package_name, 'rviz'),
-            glob('rviz/*.rviz'),
-        ),
     ],
     install_requires=['setuptools', 'pyserial'],
     zip_safe=True,

@@ -102,6 +102,20 @@ ros2 topic hz /joint_states
 ros2 topic echo /controller/displacement
 ```
 
+For RViz and transform debugging right after launch:
+
+```bash
+ros2 topic echo --once /joint_states
+ros2 topic echo --once /tf_static
+ros2 topic echo --once /tf
+```
+
+Expected result:
+
+- `/joint_states` should include `joint_yaw`, `joint_pitch`, and `joint_elbow`.
+- `/tf_static` should include the `map` to `base_link` transform.
+- `/tf` should include transforms for the arm links once `robot_state_publisher` receives joint states.
+
 ## 8. Failure checklist
 
 - If RViz does not move during the direct IK test, inspect `ik_solver` logs first.

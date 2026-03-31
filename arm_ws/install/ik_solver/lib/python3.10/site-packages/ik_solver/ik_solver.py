@@ -13,6 +13,7 @@ class IkSolverNode(Node):
 
         self.declare_parameter("joint_state_topic", "/joint_states")
         self.declare_parameter("displacement_topic", "/controller/displacement")
+        self.declare_parameter("joint_state_publish_rate", 10.0)
         self.declare_parameter("base_height", 0.05)
         self.declare_parameter("link1_length", 0.5)
         self.declare_parameter("link2_length", 0.4)
@@ -28,6 +29,9 @@ class IkSolverNode(Node):
 
         self.joint_state_topic = str(self.get_parameter("joint_state_topic").value)
         self.displacement_topic = str(self.get_parameter("displacement_topic").value)
+        self.joint_state_publish_rate = float(
+            self.get_parameter("joint_state_publish_rate").value
+        )
         self.base_height = float(self.get_parameter("base_height").value)
         self.link1_length = float(self.get_parameter("link1_length").value)
         self.link2_length = float(self.get_parameter("link2_length").value)
@@ -61,17 +65,22 @@ class IkSolverNode(Node):
             10,
         )
 
-        if bool(self.get_parameter("publish_initial_state").value):
-            self.publish_joint_state(
-                [self.current_joint_positions[name] for name in self.joint_names]
+        if self.joint_state_publish_rate > 0.0:
+            self.create_timer(
+                1.0 / self.joint_state_publish_rate,
+                self.publish_current_joint_state,
             )
+
+        if bool(self.get_parameter("publish_initial_state").value):
+            self.publish_current_joint_state()
 
         self.get_logger().info(
             "IK solver ready: joint_state_topic=%s displacement_topic=%s "
-            "base_height=%.3f link1=%.3f link2=%.3f"
+            "joint_state_publish_rate=%.2fHz base_height=%.3f link1=%.3f link2=%.3f"
             % (
                 self.joint_state_topic,
                 self.displacement_topic,
+                self.joint_state_publish_rate,
                 self.base_height,
                 self.link1_length,
                 self.link2_length,
@@ -175,6 +184,11 @@ class IkSolverNode(Node):
         joint_state_msg.position = list(positions)
         self.joint_state_publisher.publish(joint_state_msg)
 
+    def publish_current_joint_state(self) -> None:
+        self.publish_joint_state(
+            [self.current_joint_positions[name] for name in self.joint_names]
+        )
+
     def displacement_callback(self, msg: Vector3Stamped) -> None:
         current_angles = tuple(
             self.current_joint_positions[name] for name in self.joint_names
@@ -214,7 +228,7 @@ class IkSolverNode(Node):
         for joint_name, angle in zip(self.joint_names, solution):
             self.current_joint_positions[joint_name] = angle
 
-        self.publish_joint_state(list(solution))
+        self.publish_current_joint_state()
 
         self.get_logger().info(
             "Applied displacement=(%.3f, %.3f, %.3f) current_xyz=(%.3f, %.3f, %.3f) "
