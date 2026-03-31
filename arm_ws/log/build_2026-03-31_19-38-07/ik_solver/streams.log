@@ -1,0 +1,25 @@
+[1.837s] Invoking command in '/home/anant/gesture_controlled_arm/arm_ws/src/ik_solver': PYTHONPATH=/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ik_solver build --build-base /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build install --record /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/install.log --single-version-externally-managed install_data
+[2.153s] running egg_info
+[2.170s] writing ../../build/ik_solver/ik_solver.egg-info/PKG-INFO
+[2.171s] writing dependency_links to ../../build/ik_solver/ik_solver.egg-info/dependency_links.txt
+[2.172s] writing entry points to ../../build/ik_solver/ik_solver.egg-info/entry_points.txt
+[2.172s] writing requirements to ../../build/ik_solver/ik_solver.egg-info/requires.txt
+[2.172s] writing top-level names to ../../build/ik_solver/ik_solver.egg-info/top_level.txt
+[2.211s] reading manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'
+[2.213s] writing manifest file '../../build/ik_solver/ik_solver.egg-info/SOURCES.txt'
+[2.215s] running build
+[2.215s] running build_py
+[2.215s] copying ik_solver/ik_solver.py -> /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver
+[2.215s] copying ik_solver/__init__.py -> /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build/lib/ik_solver
+[2.215s] running install
+[2.219s] running install_lib
+[2.246s] running install_data
+[2.246s] copying resource/ik_solver -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ament_index/resource_index/packages
+[2.246s] copying package.xml -> /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/share/ik_solver
+[2.246s] running install_egg_info
+[2.268s] removing '/home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver-0.0.0-py3.10.egg-info' (and everything under it)
+[2.268s] Copying ../../build/ik_solver/ik_solver.egg-info to /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages/ik_solver-0.0.0-py3.10.egg-info
+[2.273s] running install_scripts
+[2.311s] Installing ik_solver script to /home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/ik_solver
+[2.311s] writing list of installed files to '/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/install.log'
+[2.358s] Invoked command in '/home/anant/gesture_controlled_arm/arm_ws/src/ik_solver' returned '0': PYTHONPATH=/home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anant/gesture_controlled_arm/arm_ws/install/ik_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ik_solver build --build-base /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/build install --record /home/anant/gesture_controlled_arm/arm_ws/build/ik_solver/install.log --single-version-externally-managed install_data

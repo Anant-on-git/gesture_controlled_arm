@@ -11,6 +11,7 @@ setup.py
 imu_reader/__init__.py
 imu_reader/imu_reader.py
 launch/arm_launch.py
+launch/manual_test.launch.py
 resource/imu_reader
 test/test_copyright.py
 test/test_flake8.py
